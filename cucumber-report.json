@@ -1,0 +1,71 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "eaapp-automation;validate-login-functionality",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Validate Login functionality",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 448638899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User launch the EAApp application URL",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2827660600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User login with valid \"admin\" and \"password\"",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 940313599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 215841999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EAAPP",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "eaapp-automation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "EaApp automation",
+    "tags": [],
+    "uri": "tests\\Features\\EaApp.feature"
+  }
+]
