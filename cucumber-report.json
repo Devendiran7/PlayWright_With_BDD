@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 448638899
+              "duration": 1019361300
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2827660600
+              "duration": 2887243500
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 940313599
+              "duration": 1013610700
             }
           },
           {
@@ -48,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 215841999
+              "duration": 263011799
             }
           }
         ],
@@ -56,6 +56,162 @@
           {
             "name": "@EAAPP",
             "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "eaapp-automation;validate-emp-details",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Validate Emp Details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 594413899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User launch the EAApp application URL",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2589362000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User login with valid \"admin1\" and \"password231\"",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:19"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5656120600,
+              "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('link', { name: 'Hello admin!' })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'Hello admin!' })\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\node_modules\\playwright\\lib\\matchers\\expect.js:221:24)\n    at World.<anonymous> (file:///C:/Users/HP/Desktop/DevaProject/PlayWright_With_BDD/tests/StepDefinition/EaApp.js:25:74)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:453:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User Validates the Invalid Credentials error message",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 182274100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Invalid",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "eaapp-automation;validate-employee-details",
+        "keyword": "Scenario Outline",
+        "line": 31,
+        "name": "Validate Employee Details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 583566899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "User launch the EAApp application URL",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2811725399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "User login with valid \"admin\" and \"password\"",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 977868599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "User Navigate to Employee Details page",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358329900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "User Validates the employee details \"John\",\"2500\" and \"3\"",
+            "match": {
+              "location": "file:\\C:\\Users\\HP\\Desktop\\DevaProject\\PlayWright_With_BDD\\tests\\StepDefinition\\EaApp.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 509380300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 200298599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EmpDetailValidation",
+            "line": 22
           }
         ],
         "type": "scenario"
